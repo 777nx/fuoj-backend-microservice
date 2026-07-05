@@ -31,7 +31,7 @@ import static com.fantasy.fuojbackenduserservice.service.impl.UserServiceImpl.SA
  * 用户接口
  */
 @RestController
-@RequestMapping("/user")
+@RequestMapping("/")
 @Slf4j
 public class UserController {
 
