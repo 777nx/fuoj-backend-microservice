@@ -71,7 +71,7 @@ RabbitMQ 默认配置：
 | Redis | `localhost:6379`，使用 `database: 1` |
 | Nacos | `127.0.0.1:8848` |
 | RabbitMQ | `localhost:5672`，用户名/密码 `guest/guest` |
-| 代码沙箱 | `http://localhost:8090/executeCode`，请求头 `auth: secretKey` |
+| 代码沙箱 | `http://localhost:8090/executeCode`，请求头 `auth: secretKey`，仓库：[777nx/fuoj-code-sandbox](https://github.com/777nx/fuoj-code-sandbox) |
 
 当前配置文件中的数据库账号为：
 
@@ -158,7 +158,7 @@ spring:
 
 ## 代码沙箱配置
 
-判题服务通过 `codesandbox.type` 选择代码沙箱实现：
+判题服务通过 `codesandbox.type` 选择代码沙箱实现。配套代码沙箱项目地址为：[777nx/fuoj-code-sandbox](https://github.com/777nx/fuoj-code-sandbox)。
 
 ```yaml
 codesandbox:
@@ -208,4 +208,4 @@ fuoj-backend-microservice
 - 题目提交采用异步判题，提交接口返回的是提交记录 ID，不是最终判题结果。
 - 管理员权限通过 `@AuthCheck(mustRole = UserConstant.ADMIN_ROLE)` 控制。
 - 当前仓库未包含数据库建表 SQL，首次启动前需要根据 `fuoj-backend-model` 中的实体类准备表结构。
-- 本地调试远程沙箱时，需要先启动兼容 `/executeCode` 接口的代码沙箱服务。
+- 本地调试远程沙箱时，需要先启动 [fuoj-code-sandbox](https://github.com/777nx/fuoj-code-sandbox) 或其他兼容 `/executeCode` 接口的代码沙箱服务。
