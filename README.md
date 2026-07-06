@@ -63,15 +63,15 @@ RabbitMQ 默认配置：
 
 本地启动前请准备以下服务：
 
-| 服务 | 默认配置 |
-| --- | --- |
-| JDK | Java 8 |
-| Maven | 3.6+ |
-| MySQL | `localhost:3306`，数据库名 `fuoj` |
-| Redis | `localhost:6379`，使用 `database: 1` |
-| Nacos | `127.0.0.1:8848` |
-| RabbitMQ | `localhost:5672`，用户名/密码 `guest/guest` |
-| 代码沙箱 | `http://localhost:8090/executeCode`，请求头 `auth: secretKey`，仓库：fuoj-code-sandbox](https://github.com/777nx/fuoj-code-sandbox) |
+| 服务 | 默认配置                                                                                                                         |
+| --- |------------------------------------------------------------------------------------------------------------------------------|
+| JDK | Java 8                                                                                                                       |
+| Maven | 3.6+                                                                                                                         |
+| MySQL | `localhost:3306`，数据库名 `fuoj`                                                                                                 |
+| Redis | `localhost:6379`，使用 `database: 1`                                                                                            |
+| Nacos | `127.0.0.1:8848`                                                                                                             |
+| RabbitMQ | `localhost:5672`，用户名/密码 `guest/guest`                                                                                        |
+| 代码沙箱 | `http://localhost:8090/executeCode`，请求头 `auth: secretKey`，仓库：[fuoj-code-sandbox](https://github.com/777nx/fuoj-code-sandbox) |
 
 当前配置文件中的数据库账号为：
 
