@@ -71,7 +71,7 @@ RabbitMQ 默认配置：
 | Redis | `localhost:6379`，使用 `database: 1` |
 | Nacos | `127.0.0.1:8848` |
 | RabbitMQ | `localhost:5672`，用户名/密码 `guest/guest` |
-| 代码沙箱 | `http://localhost:8090/executeCode`，请求头 `auth: secretKey`，仓库：[777nx/fuoj-code-sandbox](https://github.com/777nx/fuoj-code-sandbox) |
+| 代码沙箱 | `http://localhost:8090/executeCode`，请求头 `auth: secretKey`，仓库：fuoj-code-sandbox](https://github.com/777nx/fuoj-code-sandbox) |
 
 当前配置文件中的数据库账号为：
 
@@ -158,7 +158,7 @@ spring:
 
 ## 代码沙箱配置
 
-判题服务通过 `codesandbox.type` 选择代码沙箱实现。配套代码沙箱项目地址为：[777nx/fuoj-code-sandbox](https://github.com/777nx/fuoj-code-sandbox)。
+判题服务通过 `codesandbox.type` 选择代码沙箱实现。配套代码沙箱项目地址为：[fuoj-code-sandbox](https://github.com/777nx/fuoj-code-sandbox)。
 
 ```yaml
 codesandbox:
